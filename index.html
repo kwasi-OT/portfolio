@@ -11,17 +11,52 @@
             padding: 0px;
         }
 
-        #welcome {
+        #welcome-container {
+           /* width: 100%;*/
+            height: 40rem;
+            position: relative;
+        }
+
+        .welcome-left {
+            width: 65%;
+            height: 100%;
+            background-color: hsl(245, 87%, 57%);
+            z-index: 1;
+            position: relative;
+        }
+
+        .welcome-right {
+            width: 35%;
+            height: 100%;
+            background-color: hsl(102, 81%, 69%);
+            position: absolute;
+            z-index: 2;
+            padding-left: 70%;
+        }
+
+        .stack-over {
+            width: 40em;
+            height: 40em;
+            z-index: 3;
+            background-color: hsl(206, 9%, 97%); 
+            position: absolute;
+        }
+
+        #about {
             width: 100%;
             height: 50rem;
-            background-color: hsl(60, 94%, 62%);
+            background-color: hsl(206, 9%, 97%);
         }
     </style>
 </head>
 <body>
     <header></header>
     <main>
-       <div id="welcome"></div>
+       <div id="welcome-container">
+           <div class="welcome-left"></div>
+           <div class="welcome-right"></div>
+           <div class="stack-over"></div>
+       </div>
        <div id="about"></div>
        <div id="projects"></div>
     </main>
