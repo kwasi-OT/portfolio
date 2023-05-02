@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kwasi Ofori-Tweneboah | Frontend Developer</title>
+    <link rel="icon" type="image/x-icon" href="/images/hero-img.png">
     <style>
         body {
             margin: 0px;
@@ -99,6 +100,24 @@
             color: black;
         }
 
+        .social-buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 2rem;
+            padding-top: 2.2rem;
+        }
+
+        .social-buttons img {
+            width: 2rem;
+        }
+
+        .twitter:hover, .github:hover, .linkedin:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+        
     </style>
 </head>
 <body>
@@ -121,9 +140,21 @@
                     <button type="button" class="hero-button">Let's Take a Tour</button>
                 </div>
                 <div class="social-buttons">
-                    <div class="twitter"></div>
-                    <div class="github"></div>
-                    <div class="linkedin"></div>
+                    <div class="twitter">
+                        <a href="https://twitter.com/KTweneboah" target="_blank">
+                            <img src="images/twitter.png" alt="twitter" title="TWITTER">
+                        </a>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/kwasi-OT" target="_blank">
+                            <img src="images/github.png" alt="github" title="GITHUB">
+                        </a>
+                    </div>
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/kotweneboah/" target="_blank">
+                            <img src="/images/linkedin.png" alt="linkedin" title="LINKEDIN">
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="heroimg-container">
