@@ -4,42 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I'm Kwasi: Frontend Developer</title>
+    <title>Kwasi Ofori-Tweneboah | Frontend Developer</title>
     <style>
         body {
             margin: 0px;
             padding: 0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
         #welcome-container {
-           /* width: 100%;*/
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /*align-content: center;*/
+            width: 100%;
             height: 40rem;
-            position: relative;
+            background-color: white;
+            /*background-color: hsl(245, 87%, 57%);*/
         }
 
-        .welcome-left {
-            width: 65%;
+        .welcome {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 60%;
             height: 100%;
-            background-color: hsl(245, 87%, 57%);
-            z-index: 1;
-            position: relative;
-        }
-
-        .welcome-right {
-            width: 35%;
-            height: 100%;
-            background-color: hsl(102, 81%, 69%);
-            position: absolute;
-            z-index: 2;
-            padding-left: 70%;
-        }
-
-        .stack-over {
-            width: 40em;
-            height: 40em;
-            z-index: 3;
-            background-color: hsl(206, 9%, 97%); 
-            position: absolute;
+            margin: auto;
+            color: black;
+            /*align-items: flex-start;*/
         }
 
         #about {
@@ -47,18 +41,97 @@
             height: 50rem;
             background-color: hsl(206, 9%, 97%);
         }
+
+        h1,h2,h3 {
+            line-height: 1.2;
+        }
+
+        .big-heading {
+            margin: 0;
+            font-size: clamp(20px, 8vw, 50px);
+        }
+
+        /*.heroimg-container {
+            width: 20%;
+        }*/
+
+        /*.hero-blue {
+            width: 10%;
+            height: 60%;
+            background-color: hsl(242, 55%, 48%);
+            border-radius: 55.5rem 0rem 5rem 25rem;
+        }*/
+
+        .hero-img {
+            width: 20rem;
+            height: 25rem;
+            margin: 0;
+            padding-right: 2rem;
+        }
+
+        .name-color {
+            color: hsl(242, 55%, 48%);
+            text-decoration-line: underline;
+            text-decoration-color: #ffd109;
+            text-decoration-thickness: 0.6rem;
+        }
+
+        .herobutton-container {
+            padding-top: 3rem;
+        }
+
+        .hero-button {
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            background-color: #3c37be;
+            color: white;
+            font-size: 1.2rem;
+            padding: 1.5rem 3.5rem;
+            border-radius: 0.8rem 0.8rem;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+        .hero-button:hover {
+            background-color: #ffd109;
+            color: black;
+        }
+
     </style>
 </head>
 <body>
     <header></header>
     <main>
-       <div id="welcome-container">
-           <div class="welcome-left"></div>
-           <div class="welcome-right"></div>
-           <div class="stack-over"></div>
-       </div>
-       <div id="about"></div>
-       <div id="projects"></div>
+        <div id="welcome-container">
+            <div class="welcome">
+                <div>
+                    <h2>Hello there,</h2>
+                </div>
+                <div>
+                    <h2 class="big-heading">I'm 
+                        <span class="name-color">Kwasi Ofori - Tweneboah</span>
+                    </h1>
+                </div>
+                <div>
+                    <h3 class="big-heading">Frontend Developer and a cloud enthusiast</h1>
+                </div>
+                <div class="herobutton-container">
+                    <button type="button" class="hero-button">Let's Take a Tour</button>
+                </div>
+                <div class="social-buttons">
+                    <div class="twitter"></div>
+                    <div class="github"></div>
+                    <div class="linkedin"></div>
+                </div>
+            </div>
+            <div class="heroimg-container">
+                <img src="./images/hero-img.png" alt="hero image" class="hero-img">
+            </div>
+        </div>
+        <div id="about"></div>
+        <div id="projects"></div>
     </main>
     <footer></footer>
 </body>
