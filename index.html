@@ -20,21 +20,20 @@
             align-items: center;
             flex-wrap: wrap;
             /*align-content: center;*/
-            width: 100%;
+            width: 90%;
             height: 40rem;
             background-color: white;
-            /*background-color: hsl(245, 87%, 57%);*/
+            margin: 0 auto;
         }
 
         .welcome {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 60%;
+            width: 70%;
             height: 100%;
-            margin: auto;
+            /*margin: auto;*/
             color: black;
-            /*align-items: flex-start;*/
         }
 
         #about {
@@ -49,14 +48,17 @@
 
         .big-heading {
             margin: 0;
-            font-size: clamp(20px, 8vw, 50px);
+            font-size: clamp(3rem, 8vw, 50px);
+        }
+
+        .big-heading-1 {
+            font-size: clamp(2.1rem, 8vw, 30px);
         }
 
         .hero-img {
             width: 20rem;
             height: 25rem;
             margin: 0;
-            padding-right: 2rem;
         }
 
         .name-color {
@@ -105,10 +107,41 @@
         .twitter:hover, .github:hover, .linkedin:hover {
             box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
         }
+
+        .header {
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 4.4rem;
+            border-bottom: 1px solid rgb(78, 78, 78);
+            margin: 0 auto;
+        }
+
+        .header a {
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .topnav a {
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
-    <header></header>
+    <header class="header">
+        <div class="logo">
+            <a href="#">Kwasi.Dev</a>
+        </div>
+        <nav class="topnav">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">My Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Let's Talk</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <div id="welcome-container">
             <div class="welcome">
@@ -116,12 +149,12 @@
                     <h2>Hello there,</h2>
                 </div>
                 <div>
-                    <h2 class="big-heading">I'm 
+                    <h1 class="big-heading">I'm 
                         <span class="name-color">Kwasi Ofori - Tweneboah</span>
                     </h1>
                 </div>
                 <div>
-                    <h1>Frontend Developer and a cloud enthusiast</h1>
+                    <h2 class="big-heading-1">Frontend Developer and a cloud enthusiast</h2>
                 </div>
                 <div class="herobutton-container">
                     <button type="button" class="hero-button">Take a Tour</button>
@@ -129,17 +162,17 @@
                 <div class="social-buttons">
                     <!--<div class="twitter">
                         <a href="https://twitter.com/KTweneboah" target="_blank">
-                            <img src="images/twitter.png" alt="twitter" title="TWITTER">
+                            <img src="./images/twitter.png" alt="twitter" title="TWITTER">
                         </a>
                     </div>-->
                     <div class="github">
                         <a href="https://github.com/kwasi-OT" target="_blank">
-                            <img src="images/github.png" alt="github" title="GITHUB">
+                            <img src="./images/github.png" alt="github" title="GITHUB">
                         </a>
                     </div>
                     <div class="linkedin">
                         <a href="https://www.linkedin.com/in/kotweneboah/" target="_blank">
-                            <img src="/images/linkedin.png" alt="linkedin" title="LINKEDIN">
+                            <img src="./images/linkedin.png" alt="linkedin" title="LINKEDIN">
                         </a>
                     </div>
                 </div>
@@ -150,6 +183,8 @@
         </div>
         <div id="about"></div>
         <div id="projects"></div>
+        <div id="resume"></div>
+        <div id="contact"></div>
     </main>
     <footer></footer>
 </body>
