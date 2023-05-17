@@ -8,14 +8,20 @@
     <meta name="keywords" content="html, HTML, CSS, css, WordPress, wordpress, Javascript, javascript, web developer, front end, frontend, fronten developer">
     <title>Kwasi Ofori-Tweneboah | Frontend Developer</title>
     <link rel="icon" type="image/x-icon" href="/images/hero-img.png">
-   <script src="https://kit.fontawesome.com/d49c387940.js" crossorigin="anonymous"></script>
-   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-  </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d49c387940.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+    </style>
     <style> 
         body {
             margin: 0px;
             padding: 0px;
+            /*font-family: 'Roboto', sans-serif;*/
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
@@ -114,13 +120,21 @@
 
         .header {
             width: 100%;
-            /*height: 5rem;*/
+            height: 8rem;
+        }
+
+        .header li {
+            font-family: 'Roboto', sans-serif;
         }
 
         .header a {
             text-decoration: none;
             text-align: center;
             color: gray;
+        }
+
+        .header a:hover {
+            color: #000;
         }
 
         .sr-only {
@@ -135,7 +149,7 @@
         }
 
         .mobile-btn {
-            padding: 1rem;
+            font-size: 3rem;
         }
 
         @media (min-width:900px) {
@@ -150,11 +164,22 @@
             }
 
             .topnav li:not(:last-child) {
-                margin-right: 1.5rem;
+                margin-right: 2.2rem;
             }
 
             .topnav {
                 display: block! important;;
+            }
+
+            .nav-effect {
+                padding-bottom: 2rem;
+            }
+
+            .nav-effect:hover {
+                text-decoration-line: underline;
+                text-decoration-color: #3c37be;
+                text-decoration-thickness: 0.2rem;
+                text-underline-offset: 15px;
             }
         }
 
@@ -217,9 +242,9 @@
             </a>
             <nav class="topnav">
                 <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">My Work</a></li>
-                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#about"><span class="nav-effect">About Me</span></a></li>
+                    <li><a href="#projects"><span class="nav-effect">My Work</span></a></li>
+                    <li><a href="#resume"><span class="nav-effect">Resume</span></a></li>
                     <li><a href="#contact"><span class="top-cta">Let's Talk</span></a></li>
                 </ul>
             </nav>
