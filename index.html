@@ -85,7 +85,32 @@
         <div id="projects"></div>
         <div id="resume"></div>
         <div id="contact">
+            <!-- container to hold information on top of form -->
+            <div class="info"> 
+                <div class="info-style">
+                    <span class="sp1"></span>
+                    <span class="sp2"></span>
+                    <span class="sp3"></span>
+                    <h2>Contact me</h2>
+                </div>
+                <p>Let's talk about building something together</p>
+            </div>
+            <!-- actual form -->
+            <form class="form">
+                <!-- container to hold various compoments of the form, for easy styling -->
+                <div class="container">
+                    <label for="fname" class="sr-only">Full Name</label>
+                    <input type="text" placeholder="Enter Full Name" name="fname" id="fname" required>
 
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="text" pattern="[^ @]*@[^ @]*" placeholder="Enter Your Email" name="email" id="email" required>
+
+                    <label for="msg" class="sr-only">Message</label>
+                    <textarea name="msg" id="msg" placeholder="Enter Your Message" required></textarea>
+                    
+                    <input type="submit" class="btn" value="Send Message">
+                </div>
+            </form>
         </div>
     </main>
     <hr>

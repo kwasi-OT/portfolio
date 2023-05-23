@@ -157,7 +157,15 @@ h1,h2,h3 {
 }
 
 .mobile-btn {
-    font-size: 3rem;
+    padding: 0.6rem 1.1rem;
+    font-size: 2.1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.20), 0 10px 10px 0 rgba(0,0,0,0.10);
+}
+
+.mobile-btn:hover {
+    background-color: #d72828;
 }
 
 @media (min-width:900px) {
@@ -264,8 +272,163 @@ hr {
 
 /* contact section */
 #contact {
-    height: 70rem;
     background-color: #292930;
+    height: auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    text-align: center;
+    line-height: 2rem;
+    color: #fff;
+    padding: 4rem 0 1.5rem 0;
+}
+
+.info h2 {
+    color: #8a90a2;
+    text-align: center;
+}
+
+.info p {
+    padding: 0 0.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.info-style {
+    display: flex;
+    padding-right: 3rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.info-style .sp1 {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #d72828;
+    border-radius: 50%;
+}
+
+.info-style .sp2 {
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: #d72828;
+    border-radius: 50%;
+}
+
+.info-style .sp3 {
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: #d72828;
+    border-radius: 50%;
+}
+
+/* mobile and tablet screen settings */
+.form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* hide labels but make available only for screen readers */
+.sr-only {
+    position: absolute;
+    left: -10000;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+    color: rgba(250,255,250,.4);
+}
+
+option {
+    color: #8a90a2;
+} 
+
+select, input[type=date] {
+    color: rgba(250,255,250,.4);
+    /* color: #8a90a0; */
+}
+ 
+input, select, textarea {
+    background-color: transparent;
+    border: 1px solid rgba(239,241,246,.192);
+    border-radius: 0.5rem;
+    padding-top: 2rem;
+    margin: 0.7rem;
+    outline: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/* change input field border color when infocus */
+input:focus, select:focus, textarea:focus {
+    border: 1px solid #ff0000;
+}
+
+/* increase the width of input field to cover total width of its container */
+input[type=text], input[type=password], select, textarea {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* increase placeholder font size */
+input::placeholder {
+    font-size: larger;
+}
+
+textarea::placeholder {
+    font-size: 1.1rem;
+}
+
+/* increase height of textarea */
+textarea {
+    height: 12rem;
+}
+
+/* submit button styling */
+.btn {
+    width: 100%;
+    padding: 1.3rem;
+    font-size: larger;
+    background-color: #d72828;
+    border: none;
+    text-align: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #3c37be;
+    color: #fff;
+}
+
+/* desktop settings */
+@media (min-width:900px) {
+    .form {  /*change form width to 50% of the screen and center */
+        width: 50%;
+        margin: 0 auto;
+    }
+/* increase input field padding on */
+    input[type=text], input[type=password], select, textarea {
+        width: 100%;
+        padding: 1.5rem;
+        box-sizing: border-box;
+    }
 }
 
 /* footer section */
