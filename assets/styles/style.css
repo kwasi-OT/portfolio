@@ -58,7 +58,8 @@ h1,h2,h3 {
 .name-color {
     color: hsl(242, 55%, 48%);
     text-decoration-line: underline;
-    text-decoration-color: #ffd109;
+    /* text-decoration-color: #ffd109; */
+    text-decoration-color: #d72828;
     text-decoration-thickness: 0.6rem;
 }
 
@@ -81,8 +82,10 @@ h1,h2,h3 {
 }
 
 .hero-button:hover {
-    background-color: #ffd109;
-    color: black;
+    /* background-color: #ffd109; */
+    background-color: #d72828;
+    /* color: black; */
+    color: #fff;
 }
 
 .social-buttons {
@@ -182,7 +185,8 @@ h1,h2,h3 {
 
     .nav-effect:hover {
         text-decoration-line: underline;
-        text-decoration-color: #3c37be;
+        /* text-decoration-color: #3c37be; */
+        text-decoration-color: #d72828;
         text-decoration-thickness: 0.2rem;
         text-underline-offset: 15px;
     }
@@ -206,6 +210,11 @@ h1,h2,h3 {
     font-family: rock salt, sans-serif;
 }
 
+.logo-end {
+    color: #ffd109;
+    color: red;
+}
+
 .nav-container {
     display: flex;
     align-items: center;
@@ -221,8 +230,9 @@ h1,h2,h3 {
     border: none;
     text-align: center;
     text-decoration: none;
-    background-color: #ffd109;
-    color: #000000;
+    /* background-color: #ffd109; */
+    background-color: #d72828;
+    color: #fff;
     font-size: 1.2rem;
     padding: 1.5rem 3rem;
     border-radius: 0.8rem 0.8rem;
