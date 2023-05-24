@@ -15,6 +15,7 @@ function myFunction() {
     }
 }
 
+// function to open and close mobile menu
 function openOverlay() {
     document.getElementById("overlay").style.display = "flex";
 }
