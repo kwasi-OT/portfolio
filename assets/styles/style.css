@@ -179,6 +179,7 @@ h1,h2,h3 {
     background-color: rgba(0,0,0,0.5);
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 #overlay-nav li {
