@@ -528,6 +528,7 @@ textarea {
     height: 70%;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px solid red;
@@ -538,13 +539,20 @@ textarea {
     height: 30%;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px solid red;
 }
 
 .about-left {
-    width: 40%;
-    height: 100%;
-    
+    width: 100%;
+    height: 50%;
+    border: 1px solid greenyellow;
+}
+
+.about-right {
+    width: 100%;
+    height: 50%;
+    border: 1px solid greenyellow;
 }
