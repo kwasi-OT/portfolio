@@ -21,54 +21,50 @@
     </style>
 </head>
 <body>
-    <div class="top-container"></div>
-    <header class="header" id="myHeader">
-        <div class="nav-container">
-            <a href="/.">
-                <div class="logo">
-                    <h2 class="logo-text">Kwasi<span class="logo-end">.dev</span><h2>
+    <div class="top-padding"></div>
+    <header>
+        <section class="header" id="myHeader">
+            <div class="nav-container">
+                <a href="/.">
+                    <div class="logo">
+                        <h2 class="logo-text">Kwasi<span class="logo-end">.dev</span><h2>
+                    </div>
+                </a>
+                <nav class="topnav">
+                    <ul>
+                        <li><a href="#about"><span class="nav-effect">About Me</span></a></li>
+                        <li><a href="#projects"><span class="nav-effect">My Work</span></a></li>
+                        <li><a href="#resume"><span class="nav-effect">Resume</span></a></li>
+                        <li><a href="#contact"><span class="top-cta">Let's Talk</span></a></li>
+                    </ul>
+                </nav>
+                <div id="mobile-btn" onclick="openOverlay()">
+                    <i class="fa fa-bars"></i>
+                    <span class="sr-only">Mobile Menu</span>
                 </div>
-            </a>
-            <nav class="topnav">
-                <ul>
-                    <li><a href="#about"><span class="nav-effect">About Me</span></a></li>
-                    <li><a href="#projects"><span class="nav-effect">My Work</span></a></li>
-                    <li><a href="#resume"><span class="nav-effect">Resume</span></a></li>
-                    <li><a href="#contact"><span class="top-cta">Let's Talk</span></a></li>
-                </ul>
-            </nav>
-            <div id="mobile-btn" onclick="openOverlay()">
-                <i class="fa fa-bars"></i>
-                <span class="sr-only">Mobile Menu</span>
             </div>
-        </div>
-        <div id="overlay">
-            <nav id="overlay-nav">
-                <ul>
-                    <li><a href="#"><span class="nav-effect">Home</span></a></li>
-                    <li><a href="#about"><span class="nav-effect">About Me</span></a></li>
-                    <li><a href="#projects"><span class="nav-effect">My Work</span></a></li>
-                    <li><a href="#resume"><span class="nav-effect">Resume</span></a></li>
-                    <li><a href="#contact"><span class="top-cta">Let's Talk</span></a></li>
-                </ul>
-                <div id="close-icon" onclick="closeOverlay()">
-                    <i class="fa fa-2x fa-xmark"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <main>
+            <div id="overlay">
+                <nav id="overlay-nav">
+                    <ul>
+                        <li><a href="#"><span class="nav-effect">Home</span></a></li>
+                        <li><a href="#about"><span class="nav-effect">About Me</span></a></li>
+                        <li><a href="#projects"><span class="nav-effect">My Work</span></a></li>
+                        <li><a href="#resume"><span class="nav-effect">Resume</span></a></li>
+                        <li><a href="#contact"><span class="top-cta">Let's Talk</span></a></li>
+                    </ul>
+                    <div id="close-icon" onclick="closeOverlay()">
+                        <i class="fa fa-2x fa-xmark"></i>
+                    </div>
+                </nav>
+            </div>
+        </section>
         <section id="hero-container">
             <div class="welcome">
                 <div>
-                    <h2>Hello there,</h2>
-                </div>
-                <div>
+                    <h2 class="hello">Hello there,</h2>
                     <h1 class="big-heading">I'm 
                         <span class="name-color">Kwasi Ofori - Tweneboah</span>
                     </h1>
-                </div>
-                <div>
                     <h2 class="big-heading-1">Frontend Developer and a cloud enthusiast</h2>
                 </div>
                 <div class="herobutton-container">
@@ -96,6 +92,9 @@
                 <img src="./assets/images/hero-img.png" alt="hero image" class="hero-img">
             </div>
         </section>
+    </header>
+    
+    <main>
         <div id="about">
             <div class="about-container ">
                 <div class="about-top">
