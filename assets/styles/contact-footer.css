@@ -146,19 +146,6 @@ textarea {
     color: #fff;
 }
 
-/* desktop settings */
-@media (min-width:900px) {
-    .form {  /*change form width to 50% of the screen and center */
-        width: 50%;
-        margin: 0 auto;
-    }
-/* increase input field padding on */
-    input[type=text], input[type=password], select, textarea {
-        width: 100%;
-        padding: 1.5rem;
-        box-sizing: border-box;
-    }
-}
 
 hr {
     margin: 0;
@@ -167,24 +154,18 @@ hr {
 
 /* footer section */
 .footer {
-    display: flex;
-    align-items: center;
-    background-color: #292930;
+    width: 100%;
     height: 6rem;
+    background-color: #292930;
     color: #8a90a2;
 }
 
 .footer .footer-left {
     font-size: 0.9rem;
-    gap: 1rem;
 }
 
-.footer .footer-ctn {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
+.footer a {
+    text-decoration: none;
 }
 
 .fa-solid {
@@ -201,6 +182,68 @@ hr {
 
 .footer span {
     height: 40px;
-    margin: 1rem;
+    margin: 0.5rem;
     border: 1px solid hsla(0,0%,78%,.153);
+}
+
+@media (max-width:849px) {
+    .footer-ctn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 0.5rem;
+    }
+    
+    .footer-left, .footer-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 49%;
+        text-align: center;
+    }
+}
+
+
+/* desktop settings */
+@media (min-width:850px) {
+    .form {  /*change form width to 50% of the screen and center */
+        width: 50%;
+        margin: 0 auto;
+    }
+/* increase input field padding on */
+    input[type=text], input[type=password], select, textarea {
+        width: 100%;
+        padding: 1.5rem;
+        box-sizing: border-box;
+    }
+
+    .footer-ctn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .footer-left {
+        display: flex;
+        align-items: center;
+        width: 48%;
+        height: 100%;
+    }
+
+    .footer-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 48%;
+        height: 100%;
+    }
+    
 }
