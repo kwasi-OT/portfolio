@@ -2,7 +2,7 @@
 
 #about {
     width: 100%;
-    height: 130vh;
+    height: fit-content;
     background-color: #f7f8fd;
     box-sizing: border-box;
     /* background-color: hsl(206, 9%, 97%); */
@@ -10,14 +10,18 @@
 
 .about-heading {
     width: auto;
-    height: 6em;
+    height: fit-content;
     display: flex;
     padding-right: 3rem;
-    padding-top: 4rem;
-    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 0.4rem;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+}
+
+.about-heading h2 {
+    color: #8a90a2;
 }
 
 .about-heading .sp1 {
@@ -43,40 +47,19 @@
 
 .about-container {
     width: 90%;
-    height: 83%;
+    height: fit-content;
     margin: 0 auto;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     /* border: 1px solid black; */
 }
 
-/* .about-top {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .about-down {
-    width: 100%;
-    height: 20%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
-} */
-
 .about-left {
     width: 100%;
-    height: 40%;
+    height: fit-content;
 }
 
 .about-left img{
@@ -87,43 +70,36 @@
 
 .about-right {
     width: 100%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: fit-content;
 }
 
 .about-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 0.5em;
-    height: 69%;
+    height: fit-content;
 }
 
 .about-skills {
     width: 100%;
-    height: 30%;
+    height: fit-content;
     margin: 0 auto;
     padding: 0.9rem;
-    /* display: flex;
-    flex-direction: column;*/
 } 
 
 .skills-images {
     width: 100%;
-    height: 95%;
+    height: fit-content;
     display: flex;
-    /* justify-content: center; */
-    flex-wrap: wrap;
-    align-items: center;
-    /* flex: 1 0 auto; */
+    justify-content: space-evenly;
 }
 
 .skimg {
     width: 4rem;
     height: 4rem;
+}
+
+.skimg:hover {
+    position: relative;
+    bottom: 0.5rem;
 }
 
 .skills-images img {
@@ -135,19 +111,20 @@
 @media (min-width:850px) {
     #about {
         width: 100%;
-        height: 100vh;
+        /* height: 100vh; */
+        height: fit-content;
         background-color: #f7f8fd;
         box-sizing: border-box;
-        /* background-color: hsl(206, 9%, 97%); */
     }
 
     .about-heading {
         width: auto;
-        height: 15%;
+        /* height: 15%; */
+        height: fit-content;
         display: flex;
         padding-right: 3rem;
         padding-top: 4rem;
-        padding-bottom: 0;
+        padding-bottom: 1.5rem;
         align-items: center;
         justify-content: center;
         gap: 1rem;
@@ -155,54 +132,25 @@
 
     .about-container {
         width: 90%;
-        height: 83%;
+        /* height: 83%; */
+        height: fit-content;
         margin: 0 auto;
         box-sizing: border-box;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        /* border: 1px solid black; */
     }
-    
-    /* .about-top {
-        width: 100%;
-        height: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    } */
     
     .about-right {
         width: 50%;
-        height: 100%;
+        height: fit-content;
         font-family: 'Inter', sans-serif;
-        /* border: 1px solid greenyellow; */
     }
     
     
     .about-left {
         width: 40%;
-        height: 100%;
-        /* background-color: #d72828; */
-        /* background-image: url(../images/white-bg.jpg);
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat; */
-        /* border-radius: 1.5rem; */
-        /* border: 1px solid greenyellow; */
+        height: fit-content;
     }
-
-    /* .about-down {
-        width: 100%;
-        height: 20%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid red;
-    } */
 }
