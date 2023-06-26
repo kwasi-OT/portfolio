@@ -93,8 +93,8 @@
 }
 
 .skimg {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 .skimg:hover {
@@ -105,6 +105,8 @@
 .skills-images img {
     width: 100%;
     height: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
 }
 
 
