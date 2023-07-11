@@ -26,13 +26,8 @@ function closeOverlay() {
 
 // header background particles
 
-/*
+// Particles galaxy background using the lightweight library particles.js with mouse interactivity.
 
-Tutorial Description
-
-Particles galaxy background using the lightweight library particles.js with mouse interactivity.
-
-*/
 const config = {
     "particles": {
     "number": {
