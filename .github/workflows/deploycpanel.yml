@@ -1,17 +1,14 @@
 name: Publish Website to CPanel
-on: 
-  push:
-    branches:
-          - main
+on: push
 jobs: 
   FTP-Deploy-Action:
       name: FTP-Deploy-Action
       runs-on: ubuntu-latest
       steps: 
-        - uses: actions/checkout@v3
-          with:
-            fetch-depth: 2
-        - name: FTP-Deploy-Action
+        - name: Deploy-Action
+          uses: actions/checkout@v3
+          
+        - name: Sync files
           uses: SamKirkland/FTP-Deploy-Action@4.3.4
           with: 
             server: ${{secrets.FTP_SERVER}}
