@@ -16,11 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $headers = "From: {$email}";
 
 
-        if (mail($to, $subject, $body, $headers)) {
-            echo "Message sent successfully.\n Thank you for reaching out to me!";
-        } else {
-            echo "Failed to send message.";
-        }
+        mail($to, $subject, $body, $headers);
     }
 }    
 ?>
