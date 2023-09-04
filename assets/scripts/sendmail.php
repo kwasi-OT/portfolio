@@ -17,6 +17,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
         mail($to, $subject, $body, $headers);
+
+        // Redirect the user back to the same page
+        header("Location: ".$_SERVER['PHP_SELF']);
+        exit();
     }
 }    
 ?>
