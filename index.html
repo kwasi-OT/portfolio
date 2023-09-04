@@ -242,17 +242,18 @@
                 <p>Let's talk about building something together</p>
             </div>
             <!-- actual form -->
-            <form class="form" name="contact" method="POST" data-netlify="true">
+            <form id="contactForm" class="form" name="contact" method="POST" action="mailto: tweneboah21@gmail.com" enctype="multipart/form-data">
                 <!-- container to hold various compoments of the form, for easy styling -->
+                <!-- action="//formbold.com/s/915Jn" -->
                 <div class="container">
                     <label for="fname" class="sr-only">Full Name</label>
-                    <input type="text" placeholder="Enter Full Name" name="fname" id="fname" required>
+                    <input type="text" placeholder="Enter Full Name" name="name" id="fname" required>
 
                     <label for="email" class="sr-only">Email</label>
                     <input type="text" pattern="[^ @]*@[^ @]*" placeholder="Enter Your Email" name="email" id="email" required>
 
                     <label for="msg" class="sr-only">Message</label>
-                    <textarea name="msg" id="msg" placeholder="Enter Your Message" required></textarea>
+                    <textarea name="message" id="msg" placeholder="Enter Your Message" required></textarea>
                     
                     <input type="submit" class="btn" value="Send Message">
                 </div>

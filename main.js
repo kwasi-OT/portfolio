@@ -145,3 +145,19 @@ const config = {
     particlesJS("background", config);
     };
     
+
+    // form management
+
+    // let contactForm = document.getElementById("contactForm");
+
+    // contactForm.addEventListener("submit", (e) => {
+    //     e.preventDefault();
+
+    //     let name = document.getElementById("fname");
+
+    //     if(name.value == "") {
+    //         alert("Please enter your name");
+    //     } else {
+    //         alert(`${name.value}, the form was submitted successfully.\n Thank you for reaching out to me!`);
+    //     }
+    // });
