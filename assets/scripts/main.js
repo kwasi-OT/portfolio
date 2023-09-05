@@ -148,21 +148,7 @@ const config = {
 
     // form management with AJAX requests
 
-    fetch('sendmail.php', {
-        method: 'POST',
-        body: new FormData(document.getElementById('contactForm'))
-    })
-    .then(response => {
-        if (response.ok) {
-        alert('Your message has been sent successfully!');
-        } else {
-        alert('An error occurred while sending your message. Please try again later.');
-        }
-    })
-    .catch(error => {
-    alert('An error occurred while sending your message. Please try again later.');
-    });
-
+    
         
         
 
