@@ -177,10 +177,10 @@ const config = {
                 type: 'POST',
                 url: 'sendmail.php',
                 data: formData,
-                success: function(response) {
+                success: function() {
                 alert('Your message has been sent successfully!');
             },
-                error: function(xhr, status, error) {
+                error: () => {
                     alert('An error occurred while sending your message. Please try again.');
                 }
             });
