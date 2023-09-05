@@ -33,6 +33,6 @@
     echo "<script type='text/javascript'>
         setTimeout(function () {
             window.location.href = '/index.html';         
-        },5000); // 5 seconds
+        },2000); // 2 seconds
     </script>";
 ?>
