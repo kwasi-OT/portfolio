@@ -1,8 +1,5 @@
 <?php
     
-    // Redirect the user back to the same page
-    header("Location: /index.html", true, 301);
-    exit();
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if(!empty($_POST['name']) && !empty($_POST['email'])&& !empty($_POST['message'])
@@ -34,7 +31,9 @@
         }
     } 
     
-
+    // Redirect the user back to the same page
+    header("Location: /index.html", true, 301);
+    exit();
     // "<script type='text/javascript'>
     //     setTimeout(function () {
     //         window.location.href = 'https://iamkwasi.dev';         
