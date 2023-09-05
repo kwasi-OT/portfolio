@@ -146,10 +146,19 @@ const config = {
     };
     
 
-    // // form management
+    // form management with AJAX requests
 
-    // let contactForm = document.getElementById("contactForm");
-
-    // contactForm.addEventListener("submit", (e) => {
-    //     e.preventDefault();
-    // });
+    fetch('sendmail.php', {
+            method: 'POST',
+            body: new FormData(document.getElementById('contactForm'))
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Your message has been sent successfully!');
+            } else {
+                alert('An error occurred while sending your message. Please try again.');
+            }
+        })
+        .catch(error => {
+        alert('An error occurred while sending your message. Please try again.');
+    });
