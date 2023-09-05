@@ -16,27 +16,23 @@
 
 
             if(mail($to, $subject, $body, $headers)) {
-                function_success("Your message has been sent successfully. Thank you!");
-                function function_success($msg) {
-                echo "<script type='text/javascript'>alert('$msg');</script>";
-            }
+                echo "<script type='text/javascript'>";
+                echo "alert('Your message has been sent successfully. Thank you!')";
+                echo "</script>";
             } else {
-                function_failed("Sorry, message submission failed. Please try again");
-                function function_failed($msg) {
-                echo "<script type='text/javascript'>alert('$msg');</script>";
+                echo "<script type='text/javascript'>";
+                echo "alert('Sorry, message submission failed. Please try again')";
+                echo "</script>";
             }
-            }
-
-            
         }
     } 
     
     // Redirect the user back to the same page
-    header("Location: /index.html");
-    exit();
-    // "<script type='text/javascript'>
-    //     setTimeout(function () {
-    //         window.location.href = '/index.html';         
-    //     },5000); // 5 seconds
-    // </script>"
+    // header("Location: /index.html");
+    // exit();
+    "<script type='text/javascript'>
+        setTimeout(function () {
+            window.location.href = '/index.html';         
+        },5000); // 5 seconds
+    </script>";
 ?>
