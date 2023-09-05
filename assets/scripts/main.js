@@ -152,16 +152,18 @@ const config = {
             method: 'POST',
             body: new FormData(document.getElementById('contactForm'))
         })
-        .then(response => {
+        .then((response) => response.text())
+        {
             if (response.ok) {
                 alert('Your message has been sent successfully!');
             } else {
                 alert('An error occurred while sending your message. Please try again.');
             }
-        })
-        .catch(error => {
-        alert('An error occurred while sending your message. Please try again.');
-    });
+        }
+        // .catch((error) => {
+        //     console.error(error);
+        // });
+        
 
     // $(document).ready(function() {
     //     $('#contactForm').submit(function(e) {
