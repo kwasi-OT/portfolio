@@ -148,41 +148,41 @@ const config = {
 
     // form management with AJAX requests
 
-    fetch('sendmail.php', {
-            method: 'POST',
-            body: new FormData(document.getElementById('contactForm'))
-        })
-        .then((response) => response.text())
-        {
-            if (response.ok) {
-                alert('Your message has been sent successfully!');
-            } else {
-                alert('An error occurred while sending your message. Please try again.');
-            }
-        }
+    // fetch('sendmail.php', {
+    //         method: 'POST',
+    //         body: new FormData(document.getElementById('contactForm'))
+    //     })
+    //     .then((response) => response.text())
+        
+    //     if (response.ok) {
+    //         alert('Your message has been sent successfully!');
+    //     } else {
+    //         alert('An error occurred while sending your message. Please try again.');
+    //     }
+        
         // .catch((error) => {
         //     console.error(error);
         // });
         
 
-    // $(document).ready(function() {
-    //     $('#contactForm').submit(function(e) {
-    //         e.preventDefault(); // prevent the form from submitting normally
+    $(document).ready(function() {
+        $('#contactForm').submit(function(e) {
+            e.preventDefault(); // prevent the form from submitting normally
     
-    //       // get the form data
-    //         var formData = $(this).serialize();
+          // get the form data
+            var formData = $(this).serialize();
     
-    //       // send the form data using AJAX
-    //         $.ajax({
-    //             type: 'POST',
-    //             url: 'sendmail.php',
-    //             data: formData,
-    //             success: function(response) {
-    //             alert('Your message has been sent successfully!');
-    //         },
-    //             error: function(xhr, status, error) {
-    //                 alert('An error occurred while sending your message. Please try again.');
-    //             }
-    //         });
-    //     });
-    // });
+          // send the form data using AJAX
+            $.ajax({
+                type: 'POST',
+                url: 'sendmail.php',
+                data: formData,
+                success: function(response) {
+                alert('Your message has been sent successfully!');
+            },
+                error: function(xhr, status, error) {
+                    alert('An error occurred while sending your message. Please try again.');
+                }
+            });
+        });
+    });
