@@ -31,6 +31,6 @@
     echo "<script type='text/javascript'>
         setTimeout(function () {
             window.location.href = '/index.html';         
-        },2000); // 2 seconds
+        },1000); // 1 second
     </script>";
 ?>
