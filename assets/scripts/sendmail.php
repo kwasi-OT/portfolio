@@ -30,7 +30,7 @@
     // Redirect the user back to the same page
     // header("Location: /index.html");
     // exit();
-    "<script type='text/javascript'>
+    echo "<script type='text/javascript'>
         setTimeout(function () {
             window.location.href = '/index.html';         
         },5000); // 5 seconds
