@@ -51,11 +51,11 @@
             <div id="overlay">
                 <nav id="overlay-nav">
                     <ul>
-                        <li><a href="#"><span class="nav-effect">Home</span></a></li>
-                        <li><a href="#about"><span class="nav-effect">About Me</span></a></li>
-                        <li><a href="#projects"><span class="nav-effect">My Work</span></a></li>
-                        <li><a href="./resume/Kwasi Ofori - Tweneboah_Frontend Developer.pdf" target="_blank"><span class="nav-effect">Resume</span></a></li>
-                        <li><a href="#contact"><span class="top-cta">Let's Talk</span></a></li>
+                        <li><a href="#" onclick="closeOverlay()"><span class="nav-effect">Home</span></a></li>
+                        <li><a href="#about" onclick="closeOverlay()"><span class="nav-effect">About Me</span></a></li>
+                        <li><a href="#projects" onclick="closeOverlay()"><span class="nav-effect">My Work</span></a></li>
+                        <li><a href="./resume/Kwasi Ofori - Tweneboah_Frontend Developer.pdf" target="_blank" onclick="closeOverlay()"><span class="nav-effect">Resume</span></a></li>
+                        <li><a href="#contact" onclick="closeOverlay()"><span class="top-cta">Let's Talk</span></a></li>
                     </ul>
                     <div id="close-icon" onclick="closeOverlay()">
                         <i class="fa fa-2x fa-xmark"></i>
@@ -244,8 +244,6 @@
             <!-- actual form -->
             <form action="./assets/scripts/sendmail.php" id="contactForm" class="form" name="contact" method="POST"  enctype="multipart/form-data">
                 <!-- container to hold various compoments of the form, for easy styling -->
-                <!-- action="//formbold.com/s/915Jn" -->
-                <!-- action="./assets/scripts/sendmail.php" -->
                 <div class="container">
                     <label for="fname" class="sr-only">Full Name</label>
                     <input type="text" placeholder="Enter Full Name" name="name" id="fname" required>

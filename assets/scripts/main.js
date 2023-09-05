@@ -144,11 +144,3 @@ const config = {
     // background is the dom element id
     particlesJS("background", config);
     };
-    
-
-    // form management with AJAX requests
-
-    
-        
-        
-
