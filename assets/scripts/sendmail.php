@@ -3,7 +3,7 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if(!empty($_POST['name']) && !empty($_POST['email'])&& !empty($_POST['message'])
-        ){
+        ){  //declare variables
             $name = $_POST["name"];
             $email = $_POST["email"];
             $message = $_POST["message"];
@@ -14,7 +14,7 @@
             $body = "Name: {$name}\nEmail: {$email}\nMessage: {$message}";
             $headers = "From: {$email}";
 
-
+            // print alert message after submission
             if(mail($to, $subject, $body, $headers)) {
                 echo "<script type='text/javascript'>";
                 echo "alert('Your message has been sent successfully. Thank you!')";
@@ -27,9 +27,7 @@
         }
     } 
     
-    // Redirect the user back to the same page
-    // header("Location: /index.html");
-    // exit();
+    // redirect to homepage 
     echo "<script type='text/javascript'>
         setTimeout(function () {
             window.location.href = '/index.html';         
