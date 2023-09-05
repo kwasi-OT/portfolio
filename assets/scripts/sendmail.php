@@ -1,7 +1,7 @@
 <?php
     
     // Redirect the user back to the same page
-    header("Location: .../index.html", true, 301);
+    header("Location: /index.html", true, 301);
     exit();
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
